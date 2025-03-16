@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>To Do</title>
+</head>
+<body>
+    <div class="container">
+        <div class="lists">
+            <div class="list-input">
+                <input type="text" class="input-list" maxlength="30" placeholder="New List">
+                <div class="list-input-button"><img src="plus.png" width="20px" height="20px" class="plus"> </div>
+            </div>
+            <div class="list-container">
+                <!-- <div class="list-card">〉Text</div> -->
+                <!-- <div class="list-card">Text</div> -->
+                
+            </div>
+        </div>
+        <div class="tasks">
+            <div class="task-header">
+                <div class="list-name">Text</div>
+                <div class="delete-list"><img src="delete.png" width="30px" height="30px" ondrop="deleteTask(event)" ondragover="allowDrop(event)"></div>
+            </div>
+            <div class="task-container">
+                <div class="task-container-uncompleted">
+                    <!-- <div class="task-card">Text</div> -->
+                </div>
+                <br><hr class="horizontal-line" hidden><br>
+                <div class="task-container-completed">
+                    <!-- <div class="task-card" style="opacity: 50%;"><del>Text</del></div> -->
+                </div>
+            </div>
+            <div class="task-input">
+                <input type="text" class="input-task" maxlength="100" placeholder="Add a Task">
+                <div class="task-input-button"><img src="plus.png" width="25px" height="25px" class="plus"> </div>
+            </div>
+            
+        </div>
+        <div class="task-info">
+            <div class="task-text">Text</div>
+            <div class="group">
+                <div class="group-text">Date</div>
+                <input type="date" class="task-date">
+            </div>
+            <div class="group">
+                <div class="group-text">Note</div>
+                <textarea class="task-note" placeholder="Note..." maxlength="100"></textarea>
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript" src="./script.js" defer></script>
+
+</html>
